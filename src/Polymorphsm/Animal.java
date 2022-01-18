@@ -1,9 +1,11 @@
-public class Animal {
+package Polymorphsm;
+
+public abstract class Animal {
     private boolean vegetarian;
     private String eats;
 
     public Animal(){
-        System.out.println("Creature was created as Animal!");
+        System.out.println("Creature was created as Polymorphism.Animal!");
     }
 
     public Animal(boolean vegetarian, String eats) {
@@ -15,6 +17,7 @@ public class Animal {
         System.out.println("Animals can to move");
     }
 
+    public abstract void print();
     public boolean isVegetarian(){
         return vegetarian;
     }

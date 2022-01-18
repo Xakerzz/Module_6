@@ -1,3 +1,5 @@
+package Polymorphsm;
+
 public class Cat extends Animal{
     public Cat() {
         super(false, "Milk and Meat");
@@ -9,6 +11,11 @@ public class Cat extends Animal{
 
     @Override
     public void move(){
-        System.out.println("Cat can moves really quiet");
+        System.out.println("Polymorphism.Cat can moves really quiet");
+    }
+
+    @Override
+    public void print() {
+        System.out.println("Meoww");
     }
 }
