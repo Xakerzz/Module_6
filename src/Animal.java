@@ -11,8 +11,8 @@ public class Animal {
         this.eats = eats;
     }
 
-    public void sound(){
-
+    public void move(){
+        System.out.println("Animals can to move");
     }
 
     public boolean isVegetarian(){
