@@ -1,11 +1,13 @@
 package Monster;
 
-public class Zombie extends Monster{
+public class Zombie extends Monster {
     boolean growlUp;
 
-    public Zombie(String name, int damage) {
-        super(name,damage);
+    public Zombie(String name) {
+        super(name + " the Zombie",5);
     }
+
+
 
     @Override
     public void growl() {
@@ -16,8 +18,7 @@ public class Zombie extends Monster{
     public void growl(boolean growlUp) {
         if (!growlUp) {
             growl();
-        }
-        else {
+        } else {
             System.out.print(scream.toUpperCase());
             super.growl();
         }

@@ -2,16 +2,16 @@ package Monster;
 
 public class Main {
     public static void main(String[] args) {
-//        Zombie zombie = new Zombie("Alice",5);
-//        zombie.attack();
-//        zombie.growl();
-//        Zombie zombie1 = new Zombie("Bob",5);
-//        zombie1.attack();
-//        zombie1.growl();
+        Battle battle = new Battle();
+        battle.add(new Zombie("Alice"));
+        battle.add(new Zombie("Bob"));
+        battle.add(new Zombie("Eve"));
+        battle.add(new GiantSnake("Kaa"));
+        battle.add(new GiantSnake("Son of Kaa"));
 
-        Zombie zombie = new Zombie("Alice",5);
-        zombie.growl();
-        zombie.growl(true);
-        zombie.growl(false);
+        battle.add(new Zombie("Noname"));
+        battle.add(new GiantSnake("Noname"));
+
+        battle.start();
     }
 }

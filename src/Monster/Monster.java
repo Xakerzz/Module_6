@@ -7,24 +7,23 @@ public class Monster {
     private int health;
     private int damage;
     static String scream = "Raaaauuughhhh";
-    boolean growlUp;
-    public Monster(String name, int damage) {
+    public Monster(String name,int damage) {
         this.name = name;
-        this.damage =damage;
+        this.damage = damage;
         this.health = 100;
         printName(this.name);
     }
 
     public void growl() {
-        System.out.printf("%s %s the Zombie growled\n",scream,name);
+        System.out.printf("%s %s  growled\n",scream,name);
     }
 
     public void attack() {
-        System.out.printf("Monster %s the Zombie attacked with damage %d\n",this.name,this.damage);
+        System.out.printf("Monster %s  attacked with damage %d\n",this.name,this.damage);
     }
 
     private void printName(String name) {
-        System.out.printf("Monster %s the Zombie was created\n", name);
+        System.out.printf("Monster %s  was created\n", name);
     }
 
 
