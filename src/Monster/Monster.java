@@ -5,17 +5,18 @@ package Monster;
 public class Monster {
     private String name;
     private int health;
-    private int damage = 5;
-    private String growl = "Raaaauuughhhh";
-
-    public Monster(String name) {
+    private int damage;
+    static String scream = "Raaaauuughhhh";
+    boolean growlUp;
+    public Monster(String name, int damage) {
         this.name = name;
+        this.damage =damage;
         this.health = 100;
         printName(this.name);
     }
 
     public void growl() {
-        System.out.printf("%s %s the Zombie growled\n",growl,name);
+        System.out.printf("%s %s the Zombie growled\n",scream,name);
     }
 
     public void attack() {
